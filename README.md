@@ -52,7 +52,7 @@ Alternatively, you can download the package and add it manually to your path.
 ### Using <tt>pywqp_client.py</tt> in your Python program
 The core resource of `pywqp_client` is the class `RESTClient`. Instantiation is fairly simple:
 <pre>
-<tt>import pywpq_client
+<tt>import pywqp_client
 client_instance = pywqp_client.RESTClient()</tt>
 </pre>
 
