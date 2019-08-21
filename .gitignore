@@ -9,3 +9,6 @@
 #virtualenv
 env
 sandbox
+.venv/
+pywqp.egg-info
+.idea/

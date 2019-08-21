@@ -52,8 +52,8 @@ Alternatively, you can download the package and add it manually to your path.
 ### Using <tt>pywqp_client.py</tt> in your Python program
 The core resource of `pywqp_client` is the class `RESTClient`. Instantiation is fairly simple:
 <pre>
-<tt>import pywqp_client
-client_instance = pywqp_client.RESTClient()</tt>
+from pywqp import pywqp_client
+client_instance = pywqp_client.RESTClient()
 </pre>
 
 `client_instance` is now ready to run any of the functions exposed by `RESTClient`. Examples of the important ones are shown below. In all cases, the example name "client_instance" is reused for simplicity, but that name has no particular significance. Name your objects as you wish.
@@ -85,11 +85,11 @@ This function makes a call to the Water Quality Portal server specified in the `
 <br/>
 ##### Example: downloading CSV data for Stations in Boone County, Iowa, US that have made pH observations.
 <pre>
-<tt>verb = 'get'
+verb = 'get'
 host_url = 'http://waterqualitydata.us'
 resource_label = 'station'
 params = {'countrycode': 'US', 'statecode': 'US:19', 'countycode': 'US:19:015', 'characteristicName': 'pH'}
-result = client_instance.request_wqp_data(verb, host_url, resource_label, params, mime_type='text/csv')</tt>
+result = client_instance.request_wqp_data(verb, host_url, resource_label, params, mime_type='text/csv')
 </pre>
 
 <br/>

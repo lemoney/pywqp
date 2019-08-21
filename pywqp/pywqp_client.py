@@ -3,8 +3,8 @@ import urllib
 import sys
 import os.path
 import pandas as pd
-import StringIO
-import wqx_mappings
+from io import StringIO
+from . import wqx_mappings
 import xml.etree.ElementTree as et
 
 
